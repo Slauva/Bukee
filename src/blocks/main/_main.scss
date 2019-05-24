@@ -1,0 +1,48 @@
+.active {
+    border-bottom: 3px solid $emerald;
+}
+
+.page-main {
+    width: 100%;
+    height: 100vh;
+    background: url(/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.header {
+    @include container();
+    display: flex;
+    justify-content: space-between;
+
+    padding: 55px 0;
+
+    &__logo {
+        width: 137px;
+        height: 28px;
+
+        display: block;
+        background-image: url(/img/Logo.svg);
+        background-repeat: no-repeat;
+    }
+
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+
+        &__item {
+            margin-left: 15px;
+
+            &:hover {
+                border-bottom: 3px solid $emerald;
+            }
+        }
+    }
+
+    a {
+        font-family: 'Open Sans', serif;
+        font-size: 16px;
+    }
+}
