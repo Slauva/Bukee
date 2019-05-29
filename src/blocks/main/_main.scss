@@ -151,7 +151,6 @@ h2.page__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 150px;
 }
 .block-ava {
     position: relative;
@@ -175,18 +174,23 @@ h2.page__title {
 
 .block-counter {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 150px;
+
     p {
-        font-size: 18px;
         color: #696980;
+        font-size: 18px;
+        text-align: center;
     }
     span {
         display: block;
+        margin-bottom: 15px;
+
         color: $emerald;
+        font-family: 'Roboto Slab', serif;
         font-size: 80px;
         font-weight: 100;
-        margin-bottom: 15px;
     }
 }
 
