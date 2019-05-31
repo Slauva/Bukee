@@ -56,6 +56,32 @@
         max-width: 447px;
         height: 643px;
         background: url(../img/sprites/intermediate-svg/book.svg) no-repeat;
+        position: relative;
+        &__title {
+            margin-top: 116px;
+            color: $light-color;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 34px;
+            letter-spacing: 0.4px;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+            color: $emerald;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+        }
+        &__author {
+            position: absolute;
+            left: 87px;
+            bottom: 62px;
+            color: $emerald;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+        }
     }
 }
 .block-text {
@@ -232,7 +258,7 @@
                     font-family: 'Open Sans', serif;
                     line-height: 22px;
                     padding: 0 7px;
-                    color: #fff;
+                    color: $light-color;
                     background-color: #5fc9b6;
                 }
             }
@@ -268,7 +294,7 @@
 }
 
 .btn {
-    color: white;
+    color: $light-color;
     text-align: center;
     background: $gradient;
     padding: 12px 45px;
