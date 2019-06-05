@@ -115,7 +115,7 @@
     }
     &__btn {
         display: block;
-        background-color: $emerald;
+        background: $gradient;
         color: $light-color;
         text-decoration: none;
         text-align: center;
@@ -129,6 +129,9 @@
         &:active {
             box-shadow: none;
         }
+    }
+    &__center {
+        margin: 0 auto;
     }
     small {
         font-family: 'Open Sans', serif;
@@ -305,5 +308,79 @@
     outline: none;
     &:active {
         box-shadow: none;
+    }
+}
+
+// Other books
+
+.block-books {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 45px;
+    &__item {
+        text-align: center;
+        width: 316px;
+    }
+    &__img {
+        background: url(../img/book.png) no-repeat;
+        display: block;
+        width: 269px;
+        height: 409px;
+        margin: 0 auto 24px;
+        text-align: center;
+        padding-top: 75px;
+        position: relative;
+        &__title {
+            color: $light-color;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: 0.4px;
+            margin-bottom: 17px;
+        }
+        &__subtitle {
+            color: $emerald;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+        }
+        &__author {
+            position: absolute;
+            left: 50%;
+            bottom: 70px;
+            transform: translateX(-50%);
+            color: $emerald;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+        }
+    }
+    &__title {
+        color: $grey;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.7;
+        margin-bottom: 24px;
+    }
+    &__text {
+        color: $light-grey;
+        font-family: 'Open Sans', serif;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.7;
+        margin-bottom: 24px;
+    }
+    &__btn {
+        text-transform: uppercase;
+        font-family: 'Open Sans', serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+    }
+    a {
+        text-decoration: none;
+        color: $emerald;
     }
 }
