@@ -196,7 +196,9 @@
 }
 .page {
     padding: 158px 0 160px;
-
+    &_dark {
+        background-color: $grey;
+    }
     &_gray {
         background-color: #f5f6fa;
     }
@@ -634,6 +636,88 @@
         a {
             color: $emerald;
             text-decoration: none;
+        }
+    }
+}
+
+.block-carousel {
+    text-align: center;
+    background-color: $grey;
+    h3 {
+        color: $emerald;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+    p {
+        font-size: 15px;
+        font-family: 'Open Sans', serif;
+        color: #9191b5;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        line-height: 27px;
+
+        width: 738px;
+        margin: 0 auto;
+    }
+    &-thumb {
+        position: relative;
+        display: block;
+        // overflow: hidden;
+        margin: 10px auto 20px;
+        width: 152px;
+        height: 152px;
+        border-radius: 100%;
+        i {
+            color: #65e496;
+            font-size: 48px;
+            position: absolute;
+            right: -16px;
+            top: -5px;
+            z-index: 2;
+        }
+        img {
+            width: 152px;
+            height: 152px;
+            position: absolute;
+            @include abs-center();
+            object-fit: cover;
+        }
+    }
+    &-expert {
+        letter-spacing: 0.75px;
+        margin-bottom: 45px;
+    }
+}
+
+// Slider Style
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    > li {
+        margin: 0 5px;
+        > button {
+            translate: padding 0.3s linear;
+            width: 8px;
+            height: 8px;
+            padding: 5px;
+            text-indent: -9999px;
+            border: none;
+            border-radius: 100%;
+            background: $gradient;
+            outline: none;
+            line-height: 0;
+            font-size: 0;
+            cursor: pointer;
+        }
+        &.slick-active {
+            > button {
+                padding: 5px 14.5px;
+                border-radius: 1000px;
+            }
         }
     }
 }
