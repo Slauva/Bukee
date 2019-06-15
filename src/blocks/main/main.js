@@ -4,3 +4,8 @@ $(document).ready(function() {
         arrows: false
     });
 });
+
+$('#NextContent').click(function(e) {
+    $('#nextContentList').fadeIn(200);
+    $('#NextContent').hide();
+});
